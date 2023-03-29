@@ -36,8 +36,7 @@ body {
 }
 .pre--nav {
   background: var(--blue--color);
-  padding-top: 22px;
-  padding-bottom: 22px;
+  height: 7vh;
 }
 .pre--nav p {
   font-size: 14px;
@@ -47,6 +46,8 @@ body {
 .pre--nav .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .pre--nav__col1 {
@@ -69,11 +70,12 @@ nav a {
 nav .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 nav {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  height: 11vh;
 }
 nav a {
   text-transform: uppercase;
@@ -91,7 +93,7 @@ nav ul li:last-child {
 /* HERO SECTION */
 
 .hero--section {
-  height: 82.5vh;
+  height: 82vh;
   background: var(--blue--color);
   color: #fff;
 }
@@ -257,6 +259,7 @@ nav ul li:last-child {
 }
 .our--gallery h4 {
   font-size: 36px;
+  text-align: center;
 }
 .our--gallery #gallery--text {
   margin-top: 35px;
@@ -375,6 +378,7 @@ nav ul li:last-child {
 }
 .client--testimonial h2 {
   font-size: 36px;
+  text-align: center;
 }
 
 .client--testimonial #clients--text {
@@ -561,10 +565,7 @@ footer p {
   .burger {
     display: block;
   }
-  nav {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
+
   nav .container {
     align-items: center;
   }
@@ -700,5 +701,28 @@ footer p {
   }
   .nav--col2 {
     width: 100%;
+  }
+  .box1 img,
+  .box6 img,
+  .box3 img {
+    margin-right: 35px;
+  }
+  .box2 img {
+    margin-right: 24.5px;
+  }
+  .box4 img {
+    margin-right: 33px;
+  }
+  .box5 img {
+    margin-right: 22px;
+  }
+  .services--box {
+    width: 100%;
+  }
+  .services--box--1 {
+    width: auto;
+  }
+  .contact--us h2 {
+    text-align: center;
   }
 }
