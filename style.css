@@ -12,6 +12,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 li {
   list-style: none;
 }
@@ -38,7 +41,7 @@ body {
   background: var(--blue--color);
   height: 7vh;
 }
-.pre--nav p {
+.pre--nav a {
   font-size: 14px;
   color: #fff;
 }
@@ -111,9 +114,9 @@ nav ul li:last-child {
 }
 .hero--section a {
   text-transform: uppercase;
-  font-size: 24px;
-  width: 270px;
-  height: 65px;
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
   border-radius: 50rem;
   border: 0;
   color: #000;
@@ -127,7 +130,6 @@ nav ul li:last-child {
 /* SECOND SECTION */
 .second--section {
   padding-top: 150px;
-  padding-bottom: 120px;
   width: 100%;
 }
 
@@ -140,7 +142,6 @@ nav ul li:last-child {
 .second--section h2 {
   font-size: 36px;
   text-transform: uppercase;
-  font-weight: 400;
   color: var(--text--color);
   text-align: center;
 }
@@ -255,9 +256,10 @@ nav ul li:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 155px;
+  padding-top: 120px;
 }
-.our--gallery h4 {
+.our--gallery h4,
+.ev--charger h4 {
   font-size: 36px;
   text-align: center;
 }
@@ -288,79 +290,26 @@ nav ul li:last-child {
   margin-right: 0;
 }
 
-/* TEAM MEMBERS */
+/* EV CHARGER */
 
-.team--members {
+.ev--charger {
+  margin-bottom: -5px;
+  text-align: center;
   padding-top: 100px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-.team--members #pre--header {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.team--members h4 {
-  font-size: 36px;
-}
-
-.team--members #team--text {
+.ev--charger #ev--text {
   margin-top: 35px;
   margin-bottom: 80px;
   text-align: center;
   width: 920px;
   font-size: 18px;
   line-height: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-/* Team Boxes */
-.team--boxes {
-  display: flex;
+.ev--charger img {
   width: 100%;
-  justify-content: space-between;
-}
-
-.team--box {
-  height: 400px;
-  padding: 0 20px;
-  background: var(--blue--color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  margin-right: 30px;
-}
-.team--box:last-child {
-  margin-right: 0;
-}
-
-.team--box .circle {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  clip-path: circle();
-  background-color: #fff;
-  margin-bottom: 40px;
-}
-
-.team--box h4 {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-.team--box p {
-  font-size: 14px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-.team--socials a {
-  margin-right: 20px;
-}
-.team--socials a:last-child {
-  margin-right: 0;
+  object-fit: cover;
 }
 
 /* CLIENT TESTIMONIAL */
@@ -487,15 +436,6 @@ footer p {
   color: #0c0e37;
 }
 
-@media screen and (max-width: 1660px) {
-  .team--socials a {
-    margin-right: 10px;
-  }
-  .team--box {
-    padding: 0 25px;
-    margin-right: 15px;
-  }
-}
 @media screen and (max-width: 1530px) {
   .services--boxes {
     flex-direction: column;
@@ -513,13 +453,6 @@ footer p {
   }
   .about--box {
     margin-bottom: 30px;
-  }
-  .team--boxes {
-    flex-wrap: wrap;
-  }
-  .team--box {
-    margin-bottom: 30px;
-    margin-right: 0;
   }
 }
 
@@ -555,9 +488,9 @@ footer p {
   .our--services #services--text,
   .second--section #about--text,
   .our--gallery #gallery--text,
-  .team--members #team--text,
   .client--testimonial #clients--text,
-  .testemonial--text {
+  .testemonial--text,
+  .ev--charger #ev--text {
     width: 100%;
   }
 }
@@ -637,9 +570,12 @@ footer p {
   .contact--us {
     padding: 80px 0;
   }
+  .second--section {
+    padding-bottom: 0;
+  }
   .our--services,
   .our--gallery,
-  .team--members {
+  .ev--charger {
     padding-top: 80px;
   }
 }
@@ -651,14 +587,6 @@ footer p {
   .about--box {
     width: 100%;
     padding: 0 10px;
-  }
-}
-@media screen and (max-width: 616px) {
-  .team--boxes {
-    justify-content: center;
-  }
-  .team--box {
-    width: 100%;
   }
 }
 
@@ -696,7 +624,7 @@ footer p {
   .pre--nav__col1 img {
     margin-right: 5px;
   }
-  .pre--nav p {
+  .pre--nav a {
     font-size: 12px;
   }
   .nav--col2 {
